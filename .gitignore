@@ -1,0 +1,11 @@
+Library/
+Temp/
+Logs/
+obj/
+Sirenix.OdinInspector.CompatibilityLayer.csproj
+Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj
+UIFramework.sln
+Assembly-CSharp.csproj
+.vs/UIFramework/v16/Server/sqlite3/storage.ide
+.vs/UIFramework/v16/Server/sqlite3/db.lock
+.vs/UIFramework/v16/.suo
