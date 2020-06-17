@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace UIFramework
 {
+    /// <summary>
+    /// 弹窗ui加载
+    /// </summary>
     public class UIPopupLoad : UILoadBase
     {
         public override void MaskClickClose(UIInfo info)
@@ -25,7 +28,7 @@ namespace UIFramework
             }
             for (int j = removeIndex; j < m_UIStack.Count; j++)
             {
-                //m_UIStack[j].uiBase.UICanvas.sortingOrder = GetSortOrderByIndex(j);
+                m_UIStack[j].uiBase.SetSortOrder(GetSortOrderByIndex(j, m_UIStack[j].layer));
             }
         }
 

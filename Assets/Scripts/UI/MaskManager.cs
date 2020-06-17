@@ -1,32 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UIFramework;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class MaskManager : UIBase
+
+namespace UIFramework
 {
-    public Image m_image;
-    private UIInfo m_clickCloseUI = UIPath.None;
-    public UIInfo clickCloseUI
+    public class MaskManager : UIBase
     {
-        get
+        public Image m_image;
+        private UIInfo m_clickCloseUI = UIPath.None;
+        public UIInfo clickCloseUI
         {
-            return m_clickCloseUI;
+            get
+            {
+                return m_clickCloseUI;
+            }
+            set
+            {
+                m_clickCloseUI = value;
+            }
         }
-        set
+
+        public void SetTransparent()
         {
-            m_clickCloseUI = value;
+            m_image.color = new Color(0, 0, 0, 0);
         }
-    }
 
-    public void SetTransparent()
-    {
-        m_image.color = new Color(0, 0, 0, 0);
-    }
-
-    public void SetAlpha()
-    {
-        m_image.color = new Color(0, 0, 0, 0.5f);
+        public void SetAlpha()
+        {
+            m_image.color = new Color(0, 0, 0, 0.5f);
+        }
     }
 }

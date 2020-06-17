@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d17a21594effb4e9591490b009e7aa, type: 3}
-  m_Name: f7823c83638d5c643a44ffaae5bb6fe6_BundledAssetGroupSchema
+  m_Name: 1787034698f7ebe40bd08cd712abaf08_BundledAssetGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: e58d1a245433c5643ad3417df624c015, type: 2}
+  m_Group: {fileID: 11400000, guid: e12ad04ee9151134d8cb08f0a4b8f3bf, type: 2}
   m_Compression: 1
   m_IncludeInBuild: 1
   m_BundledAssetProviderType:

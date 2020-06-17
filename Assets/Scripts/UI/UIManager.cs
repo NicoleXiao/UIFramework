@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace UIFramework
 {
@@ -123,17 +124,19 @@ namespace UIFramework
             LoadUIData data = PrePushToAllStack(info, userDatas);
             //先从对象池里面加载物体，没有找到对应的物体就加载一个，加载出来要放进对象池中保存起来
             GameObject obj = PoolManager.instance.GetObject<GameObject>(info.loadPath, info.loadPath.GetAssetName(), AssetType.Prefab);
+            AsyncOperationHandle<GameObject>? loader = null;
             if (obj == null)
             {
-                //动态加载
-                var handle = Addressables.InstantiateAsync(info.loadPath);
-                yield return handle;
-                if (handle.Result != null)
+
+                loader = AddressableResLoader.InstantiateAsync(info.loadPath);
+                yield return loader;
+                if (loader.Value.Result != null)
                 {
-                    obj = handle.Result;
+                    obj = loader.Value.Result;
                     //加载完了放入对象池
                     PoolManager.instance.AddItemToPool(info.loadPath, info.loadPath.GetAssetName(), obj, AssetType.Prefab, true);
                 }
+
             }
             data.isLoading = false;
 

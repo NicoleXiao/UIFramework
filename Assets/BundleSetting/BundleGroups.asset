@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc624c64d1c41e419cad3e92bec05e7, type: 3}
+  m_Name: BundleGroups
+  m_EditorClassIdentifier: 
+  SpriteAtlasItems:
+  - rootDirectory: Assets/BundleResource/Atlas
+    fileExtensionFilters: t:folder
+    excludeFileNames: 
+  BundleItems:
+  - groupName: prefabs
+    directoryPath: Assets/BundleResource/Prefabs
+    desc: "UI\u9884\u5236\u4F53"
+    fileExtensionFilters: t:prefab
+    excludeFileNames: 
+    bundleMode: 0
+    namingStyle: 1
+  - groupName: atlas
+    directoryPath: Assets/BundleResource/Atlas
+    desc: "UI\u56FE\u96C6"
+    fileExtensionFilters: t:spriteatlas
+    excludeFileNames: 
+    bundleMode: 0
+    namingStyle: 1

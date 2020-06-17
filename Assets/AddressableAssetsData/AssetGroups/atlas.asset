@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: atlas
+  m_EditorClassIdentifier: 
+  m_GroupName: atlas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 1787034698f7ebe40bd08cd712abaf08
+  m_SerializeEntries:
+  - m_GUID: 4bb79707ada522544ba89440587ae6d8
+    m_Address: atlas/common.spriteatlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_mainAssetType: 
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8bba53e0d363fb14dac17c39f5f465cf, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8c9d5dcfe70b4624db9f9d4d0852b5b6, type: 2}
+    - {fileID: 11400000, guid: 0b6891088c2bd9a4e8fd989b94599491, type: 2}

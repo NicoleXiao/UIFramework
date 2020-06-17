@@ -44,7 +44,7 @@ namespace UIFramework
 
         public UIInfo(string path, UIType type, UIMaskType maskState = UIMaskType.None)
         {
-            loadPath = "Assets/BundleRecourse/Prefabs/" + path;
+            loadPath = "Prefabs/" + path;
             uiType = type;
             maskType = maskState;
             userDatas = null;
@@ -95,6 +95,7 @@ namespace UIFramework
         public static UIInfo MessageUI = new UIInfo("MessageUI.prefab", UIType.Tips,UIMaskType.MaskClickClose);
 
         public static UIInfo HomeUI = new UIInfo("HomeUI.prefab",UIType.ComFull);
+
     }
 
 }

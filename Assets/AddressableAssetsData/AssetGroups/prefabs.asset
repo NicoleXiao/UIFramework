@@ -18,7 +18,7 @@ MonoBehaviour:
   m_GUID: f7823c83638d5c643a44ffaae5bb6fe6
   m_SerializeEntries:
   - m_GUID: 9102a6743d3050e43916e30c0363934f
-    m_Address: Assets/BundleRecourse/Prefabs/HomeUI.prefab
+    m_Address: prefabs/homeui.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -28,7 +28,7 @@ MonoBehaviour:
     m_TargetAsset: {fileID: 3866276741202393183, guid: 9102a6743d3050e43916e30c0363934f,
       type: 3}
   - m_GUID: 96de65b779394d340a0ad69785d43302
-    m_Address: Assets/BundleRecourse/Prefabs/LoginUI.prefab
+    m_Address: prefabs/loginui.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -36,25 +36,21 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: d2bcd3ecf52ef274eaea3eb9e2bc7603
-    m_Address: Assets/BundleRecourse/Prefabs/MaskUI.prefab
+    m_Address: prefabs/maskui.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 1434886767624373986, guid: d2bcd3ecf52ef274eaea3eb9e2bc7603,
-      type: 3}
-    m_TargetAsset: {fileID: 1434886767624373986, guid: d2bcd3ecf52ef274eaea3eb9e2bc7603,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: e8e20aa3b8f0aed4b8570c36df617013
-    m_Address: Assets/BundleRecourse/Prefabs/MessageUI.prefab
+    m_Address: prefabs/messageui.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_mainAssetType: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 669089257200080386, guid: e8e20aa3b8f0aed4b8570c36df617013,
-      type: 3}
-    m_TargetAsset: {fileID: 669089257200080386, guid: e8e20aa3b8f0aed4b8570c36df617013,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8bba53e0d363fb14dac17c39f5f465cf, type: 2}
   m_SchemaSet:
