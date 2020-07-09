@@ -356,7 +356,7 @@ namespace UIFramework
         /// <param name="isClick"></param>
         private IEnumerator LoadMask()
         {
-            var handle = Addressables.InstantiateAsync(UIPath.MaskUI.loadPath);
+            var handle = AddressableResLoader.InstantiateAsync(UIPath.MaskUI.loadPath);
             yield return handle;
             if (handle.Result != null)
             {
