@@ -24,8 +24,9 @@ namespace UIFramework
         public bool hasDlcContent { get; private set; } = false;
 
 
-        public override void Init()
+        public void Initialize()
         {
+            Debug.Log("AddressbleMgr.init () ");
             var locators = Addressables.ResourceLocators;
             foreach (var locator in locators)
             {
@@ -72,6 +73,7 @@ namespace UIFramework
                 if (!spriteAtlasKeys.ContainsKey(key))
                 {
                     spriteAtlasKeys.Add(key, primaryKey);
+                    Debug.Log("SpriteAtlasKey : " + key);
                 }
 
                 if (!spriteAtlasPrimaryKeys.Contains(primaryKey))

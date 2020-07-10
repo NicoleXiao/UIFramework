@@ -17,6 +17,10 @@ namespace UIFramework
         private Dictionary<string, AsyncOperationHandle<SpriteAtlas>> m_spriteAtlasHandle = new Dictionary<string, AsyncOperationHandle<SpriteAtlas>>();
 
         private int m_requestedCount = 0;
+        public void Initialize()
+        {
+            Debug.Log("CSpriteAtlasManager Initialize");
+        }
 
         public override void Init()
         {
@@ -59,9 +63,11 @@ namespace UIFramework
             }
             else
             {
+                Debug.Log("Atlas Requested  ："  +  tag);
                 var primaryKey = AddressableMgr.instance.GetSpriteAltasPrimaryKey(tag);
                 if (!string.IsNullOrEmpty(primaryKey))
                 {
+                    Debug.Log("Atlas Requested 2");
                     var op = Addressables.LoadAssetAsync<SpriteAtlas>(primaryKey);
                     op.Completed += (s) => { callback?.Invoke(s.Result); };
                 }

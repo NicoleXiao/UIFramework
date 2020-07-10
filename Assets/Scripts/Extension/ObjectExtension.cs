@@ -20,6 +20,7 @@ namespace UIFramework
             return assetPath.Substring(index1 + 1, index2 - index1 - 1);
         }
 
+#if UNITY_EDITOR
         public static string[] FindAssets(string[] folders, string filter, string exincludeName)
         {
             List<string> list = new List<string>();
@@ -50,5 +51,6 @@ namespace UIFramework
             }
             return list.ToArray();
         }
+#endif
     }
 }
